@@ -12,6 +12,7 @@ namespace ModuleTracking
         /// </summary>
         /// <param name="moduleName">The <see cref="WellKnownModuleNames">well-known name</see> of the module.</param>
         /// <param name="bytesReceived">The number of bytes downloaded.</param>
+        /// <param name="totalBytesToReceive"></param>
         void RecordModuleDownloading(string moduleName, long bytesReceived, long totalBytesToReceive);
 
         /// <summary>
