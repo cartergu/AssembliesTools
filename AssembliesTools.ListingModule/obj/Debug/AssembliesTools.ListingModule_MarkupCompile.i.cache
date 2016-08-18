@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\share\AssembliesTools\AssembliesTools.ListingModule\obj\Debug\
+C:\pnl\AssembliesTools\AssembliesTools.ListingModule\obj\Debug\
 AssembliesTools.ListingModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 3351990110
 
 111617953844
-19-479740497
+1944743581
 Views\AssemblyView.xaml;Views\ListingNavigationItemView.xaml;Views\ListingView.xaml;
 
 False

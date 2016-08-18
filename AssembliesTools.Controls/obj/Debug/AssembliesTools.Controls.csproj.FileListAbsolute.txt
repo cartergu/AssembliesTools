@@ -9,3 +9,14 @@ C:\share\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Cont
 C:\share\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.dll
 C:\share\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.pdb
 C:\share\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.csprojResolveAssemblyReference.cache
+C:\pnl\AssembliesTools\AssembliesTools.Controls\bin\Debug\AssembliesTools.Controls.dll
+C:\pnl\AssembliesTools\AssembliesTools.Controls\bin\Debug\AssembliesTools.Controls.pdb
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.csprojResolveAssemblyReference.cache
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\BusyIndicator.baml
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\InfoTipToggleButton.baml
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\BusyIndicator.g.cs
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\InfoTipToggleButton.g.cs
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls_MarkupCompile.cache
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.g.resources
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.dll
+C:\pnl\AssembliesTools\AssembliesTools.Controls\obj\Debug\AssembliesTools.Controls.pdb

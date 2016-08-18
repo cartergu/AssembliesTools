@@ -8,3 +8,13 @@ C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.Wpf.xml
 C:\share\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.dll
 C:\share\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.pdb
 C:\share\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.csprojResolveAssemblyReference.cache
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\AssembliesTools.DomainModels.dll
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\AssembliesTools.DomainModels.pdb
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.dll
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.Wpf.dll
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\System.Windows.Interactivity.dll
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.xml
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.Wpf.xml
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.csprojResolveAssemblyReference.cache
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.dll
+C:\pnl\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.pdb

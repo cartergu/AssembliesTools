@@ -70,21 +70,21 @@ namespace AssembliesTools
                 ExpectedInitializationMode = InitializationMode.WhenAvailable,
                 ExpectedDownloadTiming = DownloadTiming.InBackground,
             };
-            this.moduleETrackingState = new ModuleTrackingState
-            {
-                ModuleName = WellKnownModuleNames.ModuleE,
-                ExpectedDiscoveryMethod = DiscoveryMethod.ConfigurationManifest,
-                ExpectedInitializationMode = InitializationMode.OnDemand,
-                ExpectedDownloadTiming = DownloadTiming.InBackground,
-            };
-            this.moduleFTrackingState = new ModuleTrackingState
-            {
-                ModuleName = WellKnownModuleNames.ModuleF,
-                ExpectedDiscoveryMethod = DiscoveryMethod.ConfigurationManifest,
-                ExpectedInitializationMode = InitializationMode.OnDemand,
-                ExpectedDownloadTiming = DownloadTiming.InBackground,
-                ConfiguredDependencies = WellKnownModuleNames.ModuleE,
-            };
+        //    this.moduleETrackingState = new ModuleTrackingState
+        //    {
+        //        ModuleName = WellKnownModuleNames.ModuleE,
+        //        ExpectedDiscoveryMethod = DiscoveryMethod.ConfigurationManifest,
+        //        ExpectedInitializationMode = InitializationMode.OnDemand,
+        //        ExpectedDownloadTiming = DownloadTiming.InBackground,
+        //    };
+        //    this.moduleFTrackingState = new ModuleTrackingState
+        //    {
+        //        ModuleName = WellKnownModuleNames.ModuleF,
+        //        ExpectedDiscoveryMethod = DiscoveryMethod.ConfigurationManifest,
+        //        ExpectedInitializationMode = InitializationMode.OnDemand,
+        //        ExpectedDownloadTiming = DownloadTiming.InBackground,
+        //        ConfiguredDependencies = WellKnownModuleNames.ModuleE,
+        //    };
         }
 
         /// <summary>
@@ -254,13 +254,13 @@ namespace AssembliesTools
                 case WellKnownModuleNames.ModuleB:
                     return this.ModuleBTrackingState;
                 case WellKnownModuleNames.ModuleC:
-                    return this.ModuleCTrackingState;
-                case WellKnownModuleNames.ModuleD:
-                    return this.ModuleDTrackingState;
-                case WellKnownModuleNames.ModuleE:
-                    return this.ModuleETrackingState;
-                case WellKnownModuleNames.ModuleF:
-                    return this.ModuleFTrackingState;
+                //    return this.ModuleCTrackingState;
+                //case WellKnownModuleNames.ModuleD:
+                //    return this.ModuleDTrackingState;
+                //case WellKnownModuleNames.ModuleE:
+                //    return this.ModuleETrackingState;
+                //case WellKnownModuleNames.ModuleF:
+                //    return this.ModuleFTrackingState;
                 default:
                     return null;
             }

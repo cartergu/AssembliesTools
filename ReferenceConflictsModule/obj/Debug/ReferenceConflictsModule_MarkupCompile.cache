@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\share\AssembliesTools\ReferenceConflictsModule\obj\Debug\
+C:\pnl\AssembliesTools\ReferenceConflictsModule\obj\Debug\
 ReferenceConflictsModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 21814131550
 
 15-64013875
-69-580774737
+691251865446
 Views\ConflictsNavigationItemView.xaml;Views\ReferenceConflictsView.xaml;
 
 False
