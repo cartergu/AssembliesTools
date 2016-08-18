@@ -1,0 +1,10 @@
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\AssembliesTools.DomainModels.dll
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\AssembliesTools.DomainModels.pdb
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.dll
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.Wpf.dll
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\System.Windows.Interactivity.dll
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.xml
+C:\share\AssembliesTools\AssembliesTools.DomainModels\bin\Debug\Prism.Wpf.xml
+C:\share\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.dll
+C:\share\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.pdb
+C:\share\AssembliesTools\AssembliesTools.DomainModels\obj\Debug\AssembliesTools.DomainModels.csprojResolveAssemblyReference.cache

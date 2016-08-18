@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="ReferenceConflictsModule.Views.ReferenceConflictsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" d:DesignHeight="500" d:DesignWidth="800" Loaded="ReferenceConflictsView_OnLoaded">
+    <DataGrid ItemsSource="{Binding Path=ReferenceDifferences}" AutoGenerateColumns="False" HeadersVisibility="None" GridLinesVisibility="None">
+        <DataGrid.GroupStyle>
+            <GroupStyle>
+                <GroupStyle.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=Name}" FontWeight="Bold" />
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupStyle.HeaderTemplate>
+                <GroupStyle.ContainerStyle>
+                    <Style TargetType="{x:Type GroupItem}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type GroupItem}">
+                                    <Expander>
+                                        <Expander.Header>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="{Binding Path=Name}" FontWeight="Bold" Margin="0, 0, 10, 0"/>
+                                                <TextBlock Text="referenced by "/>
+                                                <TextBlock Text="{Binding Path=ItemCount}" Foreground="Blue" Margin="0, 0, 2, 0"/>
+                                                <TextBlock Text="assemblies"/>
+                                            </StackPanel>
+                                        </Expander.Header>
+                                        <ItemsPresenter Margin="50, 0, 0, 0" />
+                                    </Expander>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </GroupStyle.ContainerStyle>
+            </GroupStyle>
+            <GroupStyle>
+                <GroupStyle.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0">
+                            <TextBlock Margin="0, 0, 5, 0" Text="Version"   />
+                            <TextBlock Text="{Binding Path=Name}" FontWeight="Bold" Margin="0, 0, 2, 0"  />
+                            <TextBlock Text="referenced by "/>
+                            <TextBlock Text="{Binding Path=ItemCount}" Foreground="Blue" Margin="0, 0, 2, 0"/>
+                            <TextBlock Text="assemblies"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupStyle.HeaderTemplate>
+            </GroupStyle>
+        </DataGrid.GroupStyle>
+
+        <DataGrid.Columns>
+            <!--<DataGridTextColumn Header="Reference Name" Binding="{Binding ReferenceName, Mode=OneWay}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Version" Binding="{Binding ReferenceVersion, Mode=OneWay}" IsReadOnly="True"/>-->
+            <DataGridTextColumn Header="Referenced By" Binding="{Binding Assembly, Mode=OneWay}" IsReadOnly="True"/>
+        </DataGrid.Columns>
+    </DataGrid>
+</UserControl>
