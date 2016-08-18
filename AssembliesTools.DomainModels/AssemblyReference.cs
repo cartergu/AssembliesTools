@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace AssembliesTools.DomainModels
@@ -16,7 +17,7 @@ namespace AssembliesTools.DomainModels
             private set
             {
                 _assembly = value;
-                NotifyPropertyChanged("Assembly");
+                NotifyPropertyChanged();
             }
         }
 
@@ -27,7 +28,7 @@ namespace AssembliesTools.DomainModels
             private set
             {
                 _referenceName = value;
-                NotifyPropertyChanged("ReferenceName");
+                NotifyPropertyChanged();
             }
         }
 
@@ -38,7 +39,7 @@ namespace AssembliesTools.DomainModels
             private set
             {
                 _referenceVersion = value;
-                NotifyPropertyChanged("ReferenceVersion");
+                NotifyPropertyChanged();
             }
         }
 
@@ -54,12 +55,9 @@ namespace AssembliesTools.DomainModels
         // This method is called by the Set accessor of each property.
         // The CallerMemberName attribute that is applied to the optional propertyName
         // parameter causes the property name of the caller to be substituted as an argument.
-        private void NotifyPropertyChanged(String propertyName = "")
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

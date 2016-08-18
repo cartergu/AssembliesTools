@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssembliesTools</RootNamespace>
     <AssemblyName>AssembliesTools</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -88,11 +88,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CallbackLogger.cs" />
-    <Compile Include="DiscoveryMethod.cs" />
-    <Compile Include="DownloadTiming.cs" />
-    <Compile Include="ModuleInitializationStatus.cs" />
-    <Compile Include="ModuleTracker.cs" />
-    <Compile Include="ModuleTrackingState.cs" />
     <Compile Include="QuickStartBootstrapper.cs" />
     <Page Include="Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -158,10 +153,6 @@
     <ProjectReference Include="..\DirectoryBrowserModule\DirectoryBrowserModule.csproj">
       <Project>{a0d776d4-aec5-4ef7-8d01-6be02d6c661e}</Project>
       <Name>DirectoryBrowserModule</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ModuleTracking\ModuleTracking.csproj">
-      <Project>{1a98f3e7-2163-46ce-9b6a-e204fff4f3b8}</Project>
-      <Name>ModuleTracking</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReferenceConflictsModule\ReferenceConflictsModule.csproj">
       <Project>{bb85e699-fa9e-46eb-a1ca-c86c79e131e7}</Project>

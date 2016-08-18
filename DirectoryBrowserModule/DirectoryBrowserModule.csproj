@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DirectoryBrowserModule</RootNamespace>
     <AssemblyName>DirectoryBrowserModule</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -74,10 +74,6 @@
     <ProjectReference Include="..\AssembliesTools.DomainModels\AssembliesTools.DomainModels.csproj">
       <Project>{d04f28de-a7be-46da-80c7-649438639a0b}</Project>
       <Name>AssembliesTools.DomainModels</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ModuleTracking\ModuleTracking.csproj">
-      <Project>{1a98f3e7-2163-46ce-9b6a-e204fff4f3b8}</Project>
-      <Name>ModuleTracking</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

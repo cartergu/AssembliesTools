@@ -43,8 +43,6 @@ C:\share\AssembliesTools\AssembliesTools\obj\Debug\Styles.baml
 C:\share\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.ListingModule.dll
 C:\share\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.ListingModule.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.exe.config
-C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.exe
-C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.exe
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.Controls.dll
@@ -54,7 +52,6 @@ C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Microsoft.Practices.ServiceLoca
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Microsoft.Practices.Unity.dll
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
-C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\ModularityWithUnity.ModuleTracking.dll
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Prism.dll
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Prism.Unity.Wpf.dll
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Prism.Wpf.dll
@@ -64,7 +61,6 @@ C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.DomainModels.dl
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.Controls.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssembliesTools.ListingModule.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\DirectoryBrowserModule.pdb
-C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\ModularityWithUnity.ModuleTracking.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\ReferenceConflictsModule.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Microsoft.Practices.ServiceLocation.xml
@@ -86,3 +82,5 @@ C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools_MarkupCompile.c
 C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.g.resources
 C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.Properties.Resources.resources
 C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.csproj.GenerateResource.Cache
+C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.exe
+C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.pdb

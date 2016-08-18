@@ -24,13 +24,11 @@ C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\ReferenceConflictsModu
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\ReferenceConflictsModule.pdb
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\AssembliesTools.Controls.dll
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\AssembliesTools.DomainModels.dll
-C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\ModularityWithUnity.ModuleTracking.dll
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Prism.dll
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Prism.Wpf.dll
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\System.Windows.Interactivity.dll
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\AssembliesTools.Controls.pdb
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\AssembliesTools.DomainModels.pdb
-C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\ModularityWithUnity.ModuleTracking.pdb
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Prism.xml
 C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Prism.Wpf.xml
 C:\pnl\AssembliesTools\ReferenceConflictsModule\obj\Debug\ReferenceConflictsModule.csprojResolveAssemblyReference.cache

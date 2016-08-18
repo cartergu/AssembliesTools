@@ -31,13 +31,11 @@ C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssembliesTools.L
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssembliesTools.Controls.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssembliesTools.DomainModels.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\Microsoft.Practices.Unity.dll
-C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\ModularityWithUnity.ModuleTracking.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\Prism.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\Prism.Wpf.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\System.Windows.Interactivity.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssembliesTools.Controls.pdb
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssembliesTools.DomainModels.pdb
-C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\ModularityWithUnity.ModuleTracking.pdb
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\Microsoft.Practices.Unity.xml
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\Prism.xml
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\Prism.Wpf.xml

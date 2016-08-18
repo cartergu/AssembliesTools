@@ -22,12 +22,10 @@ C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\DirectoryBrowserModule.d
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\DirectoryBrowserModule.pdb
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\AssembliesTools.DomainModels.dll
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\Microsoft.Practices.Unity.dll
-C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\ModularityWithUnity.ModuleTracking.dll
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\Prism.dll
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\Prism.Wpf.dll
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\System.Windows.Interactivity.dll
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\AssembliesTools.DomainModels.pdb
-C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\ModularityWithUnity.ModuleTracking.pdb
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\Microsoft.Practices.Unity.xml
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\Prism.xml
 C:\pnl\AssembliesTools\DirectoryBrowserModule\bin\Debug\Prism.Wpf.xml

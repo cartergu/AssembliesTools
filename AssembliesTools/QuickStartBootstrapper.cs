@@ -13,7 +13,6 @@ namespace AssembliesTools
     using Prism.Unity;
     using Microsoft.Practices.ServiceLocation;
     using Microsoft.Practices.Unity;
-    using ModuleTracking;
 
 
     /// <summary>
@@ -78,14 +77,11 @@ namespace AssembliesTools
         {
             base.ConfigureContainer();
 
-            this.RegisterTypeIfMissing(typeof(IModuleTracker), typeof(ModuleTracker), true);
+            RegisterTypeIfMissing(typeof(IEventAggregator), typeof(EventAggregator), true); // new ContainerControlledLifetimeManager());
 
-            this.RegisterTypeIfMissing(typeof(IEventAggregator), typeof(EventAggregator), true); // new ContainerControlledLifetimeManager());
-
-            this.Container.RegisterInstance<CallbackLogger>(this.callbackLogger);
+            Container.RegisterInstance(callbackLogger);
 
             ViewModelLocationProvider.SetDefaultViewModelFactory(type => Container.Resolve(type));
-            
         }
 
         /// <summary>
