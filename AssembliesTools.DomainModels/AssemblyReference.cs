@@ -32,8 +32,8 @@ namespace AssembliesTools.DomainModels
             }
         }
 
-        public Version _referenceVersion;
-        public Version ReferenceVersion
+        public string _referenceVersion;
+        public string ReferenceVersion
         {
             get { return _referenceVersion; }
             private set
@@ -43,7 +43,7 @@ namespace AssembliesTools.DomainModels
             }
         }
 
-        public AssemblyReference(string assembly, string referenceName, Version referenceVersion)
+        public AssemblyReference(string assembly, string referenceName, string referenceVersion)
         {
             Assembly = assembly;
             ReferenceName = referenceName;

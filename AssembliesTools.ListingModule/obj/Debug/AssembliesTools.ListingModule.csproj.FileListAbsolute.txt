@@ -52,3 +52,5 @@ C:\pnl\AssembliesTools\AssembliesTools.ListingModule\obj\Debug\Views\ListingView
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\obj\Debug\AssembliesTools.ListingModule.g.resources
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\obj\Debug\AssembliesTools.ListingModule.dll
 C:\pnl\AssembliesTools\AssembliesTools.ListingModule\obj\Debug\AssembliesTools.ListingModule.pdb
+C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssemblyInfoProvider.Contracts.dll
+C:\pnl\AssembliesTools\AssembliesTools.ListingModule\bin\Debug\AssemblyInfoProvider.Contracts.pdb

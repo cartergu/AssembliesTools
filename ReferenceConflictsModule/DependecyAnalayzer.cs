@@ -3,14 +3,31 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using AssembliesTools.DomainModels;
+using System.Runtime.CompilerServices;
+using AssemblyInfoProvider.Contracts;
+using Microsoft.Practices.ServiceLocation;
 using ReferenceConflictsModule.Native;
+using AssemblyReference = AssembliesTools.DomainModels.AssemblyReference;
 
 namespace ReferenceConflictsModule
 {
-    public static class DependecyAnalayzer
+    public class DependecyAnalayzer
     {
-        public static IEnumerable<AssemblyReference> GetDependeciesReferences(string directoryPath)
+        private readonly IAssemblyInfoProvider _assemblyInfoProvider;
+        private DependecyAnalayzer(IAssemblyInfoProvider assemblyInfoProvider)
+        {
+            _assemblyInfoProvider = assemblyInfoProvider;
+        }
+
+        private static Lazy<DependecyAnalayzer> dependencyAnalayzerLazy = new Lazy<DependecyAnalayzer>
+             (() => new DependecyAnalayzer(ServiceLocator.Current.GetInstance<IAssemblyInfoProvider>()));
+
+        public static DependecyAnalayzer Instance
+        {
+            get { return dependencyAnalayzerLazy.Value; }
+        }
+
+        public IEnumerable<AssemblyReference> GetDependeciesReferences(string directoryPath)
         {
             var directoryInfo = new DirectoryInfo(directoryPath);
 
@@ -19,7 +36,7 @@ namespace ReferenceConflictsModule
             return GetAssemblyReferences(assemblyFiles);
         }
 
-        public static IEnumerable<AssemblyReference> GetDependeciesReferencesConflicts(IEnumerable<AssemblyReference> assemblyReferences, bool skipSystem)
+        public IEnumerable<AssemblyReference> GetDependeciesReferencesConflicts(IEnumerable<AssemblyReference> assemblyReferences, bool skipSystem)
         {
             foreach (var gr in assemblyReferences.GroupBy(o => o.ReferenceName))
             {
@@ -34,26 +51,14 @@ namespace ReferenceConflictsModule
             }
         }
 
-        public static IEnumerable<AssemblyReference> GetAssemblyReferences(IEnumerable<FileInfo> fileInfos)
+        public IEnumerable<AssemblyReference> GetAssemblyReferences(IEnumerable<FileInfo> fileInfos)
         {
             foreach (var fileInfo in fileInfos.OrderBy(asm => asm.Name))
             {
-                Assembly assembly = null;
-                try
-                {
-                    if (!fileInfo.IsAssembly()) continue;
-                   
-                    assembly = Assembly.ReflectionOnlyLoadFrom(fileInfo.FullName);
-                }
-                catch (Exception ex)
-                {
-                    //_failedToLoadAssemblies.Add(fileInfo.Name);
-                    continue;
-                }
-
-                foreach (var referencedAssembly in assembly.GetReferencedAssemblies())
-                    yield return new AssemblyReference(assembly.GetName().Name, referencedAssembly.Name, referencedAssembly.Version);
-                
+                var assemblyInfo = _assemblyInfoProvider.GetAssemblyInfo(fileInfo.FullName);
+                if(assemblyInfo != null)
+                    foreach (var referencedAssembly in assemblyInfo.ReferencedAssemblies)
+                        yield return new AssemblyReference(assemblyInfo.Name, referencedAssembly.ReferenceName, referencedAssembly.Version);
             }
         }
     }

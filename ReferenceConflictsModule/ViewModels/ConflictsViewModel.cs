@@ -68,9 +68,9 @@ namespace ReferenceConflictsModule.ViewModels
 
             if (!string.IsNullOrEmpty(_folderPath) && System.IO.Directory.Exists(_folderPath))
             {
-                var assemblyReferences = DependecyAnalayzer.GetDependeciesReferences(_folderPath);
+                var assemblyReferences = DependecyAnalayzer.Instance.GetDependeciesReferences(_folderPath);
 
-                var referenceConflicts = DependecyAnalayzer.GetDependeciesReferencesConflicts(assemblyReferences, true).ToList();
+                var referenceConflicts = DependecyAnalayzer.Instance.GetDependeciesReferencesConflicts(assemblyReferences, true).ToList();
 
                 ReferenceDifferences = new ListCollectionView(referenceConflicts) 
                 { 

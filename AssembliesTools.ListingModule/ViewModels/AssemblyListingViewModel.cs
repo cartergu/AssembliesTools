@@ -7,16 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AssembliesTools.DomainModels;
+using AssemblyInfoProvider.Contracts;
 using Prism.Events;
+using AssemblyReference = AssembliesTools.DomainModels.AssemblyReference;
 
 namespace AssembliesTools.ListingModule.ViewModels
 {
     public class AssemblyListingViewModel : INotifyPropertyChanged
     {
         private readonly IEventAggregator _eventAggregator;
-        public AssemblyListingViewModel(IEventAggregator evetAggregator)
+        private readonly IAssemblyInfoProvider _assemblyInfoProvider;
+
+        public AssemblyListingViewModel(IEventAggregator evetAggregator, IAssemblyInfoProvider assemblyInfoProvider)
         {
             _eventAggregator = evetAggregator;
+            _assemblyInfoProvider = assemblyInfoProvider;
             _eventAggregator.GetEvent<FolderSelectedEvent>().Subscribe(Refresh);
         }
 
@@ -52,7 +57,11 @@ namespace AssembliesTools.ListingModule.ViewModels
 
             foreach (var o in diretoryInfo.EnumerateFiles("*.dll", SearchOption.TopDirectoryOnly).Concat(diretoryInfo.EnumerateFiles("*.exe", SearchOption.TopDirectoryOnly)))
             {
-                _assemblyViewModels.Add(new AssemblyViewModel(o));
+                var asmInfo = _assemblyInfoProvider.GetAssemblyInfo(o.FullName);
+
+                if(asmInfo != null) 
+                    _assemblyViewModels.Add(new AssemblyViewModel(asmInfo.Name, asmInfo.FullName, asmInfo.Version, asmInfo.ReferencedAssemblies
+                        .Select(t=> new AssemblyReference(asmInfo.Name, t.ReferenceName, t.Version)).ToArray()));
             }
 
             NotifyPropertyChanged("AssemblyViewModels");

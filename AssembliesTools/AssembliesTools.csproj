@@ -150,6 +150,14 @@
       <Project>{af75922d-a4f7-43e4-aca0-62ccb85997f8}</Project>
       <Name>AssembliesTools.ListingModule</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AssemblyInfoProvider.Contracts\AssemblyInfoProvider.Contracts.csproj">
+      <Project>{e5b0d6d9-97cc-47c9-94c3-0e426f82625b}</Project>
+      <Name>AssemblyInfoProvider.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AssemblyInfoProvider.MonoCecil\AssemblyInfoProvider.MonoCecil.csproj">
+      <Project>{d6e6cf46-6eb6-4066-9d52-f49cf3b83685}</Project>
+      <Name>AssemblyInfoProvider.MonoCecil</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DirectoryBrowserModule\DirectoryBrowserModule.csproj">
       <Project>{a0d776d4-aec5-4ef7-8d01-6be02d6c661e}</Project>
       <Name>DirectoryBrowserModule</Name>

@@ -24,37 +24,21 @@ namespace AssembliesTools.ListingModule.ViewModels
 
         public AssemblyReference[] AssembliesReferencedBy { get; private set; }
 
-        public AssemblyViewModel(FileInfo fi)
+        public string[] ExportedTypes { get; private set; }
+
+        public AssemblyViewModel(string name, string fullName, string version, AssemblyReference[] assemblyReferences)
         {
-            Name = fi.Name;
-            FullName = fi.FullName;
-            Version = FileVersionInfo.GetVersionInfo(fi.FullName).FileVersion;
-            try
-            {
-                var assembly = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(o => o.Location == fi.FullName);
-                
-                if(assembly == null)
-                    assembly = Assembly.ReflectionOnlyLoadFrom(fi.FullName);
-
-                ReferencedAssemblies =
-                    assembly.GetReferencedAssemblies()
-                        .Select(o => new AssemblyReference(fi.Name, o.Name, o.Version))
-                        .ToArray();
-
-                DotNetVersion = GetDotNetVersion();
-            }
-            catch (Exception)
-            {
-            }
-
-            //Version = AssemblyName.GetAssemblyName(fi.FullName).Version.ToString();
-            //Version = fi.
+            this.Name = name;
+            this.FullName = fullName;
+            this.Version = version;
+            this.ReferencedAssemblies = assemblyReferences;
+            DotNetVersion = GetDotNetVersion();
         }
-
+ 
         private string GetDotNetVersion()
         {
             var dotNetReference = ReferencedAssemblies.FirstOrDefault(o => o.ReferenceName == "mscorlib");
-            return dotNetReference != null ? dotNetReference.ReferenceVersion.ToString() : null;
+            return dotNetReference?.ReferenceVersion;
         }
     }
 }

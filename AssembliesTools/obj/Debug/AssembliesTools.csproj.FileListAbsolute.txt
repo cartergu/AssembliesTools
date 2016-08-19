@@ -84,3 +84,8 @@ C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.Properties.Reso
 C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.csproj.GenerateResource.Cache
 C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.exe
 C:\pnl\AssembliesTools\AssembliesTools\obj\Debug\AssembliesTools.pdb
+C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssemblyInfoProvider.Contracts.dll
+C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssemblyInfoProvider.Contracts.pdb
+C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssemblyInfoProvider.MonoCecil.dll
+C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\Mono.Cecil.dll
+C:\pnl\AssembliesTools\AssembliesTools\bin\Debug\AssemblyInfoProvider.MonoCecil.pdb

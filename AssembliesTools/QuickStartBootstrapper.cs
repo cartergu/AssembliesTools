@@ -1,4 +1,6 @@
 ﻿
+using AssemblyInfoProvider.Contracts;
+using AssemblyInfoProvider.MonoCecil;
 using DirectoryBrowserModule;
 using Prism;
 using Prism.Events;
@@ -75,13 +77,19 @@ namespace AssembliesTools
         /// </summary>
         protected override void ConfigureContainer()
         {
+            ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(this.Container));
+
             base.ConfigureContainer();
 
             RegisterTypeIfMissing(typeof(IEventAggregator), typeof(EventAggregator), true); // new ContainerControlledLifetimeManager());
 
+            Container.RegisterType<IAssemblyInfoProvider, MonoCecilAssemblyInfoProvider>(
+                new ContainerControlledLifetimeManager());
+
             Container.RegisterInstance(callbackLogger);
 
             ViewModelLocationProvider.SetDefaultViewModelFactory(type => Container.Resolve(type));
+
         }
 
         /// <summary>

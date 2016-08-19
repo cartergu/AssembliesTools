@@ -2,6 +2,7 @@
 
 using System;
 using AssembliesTools.Controls;
+using Microsoft.Practices.Unity;
 using Prism.Logging;
 using Prism.Modularity;
 using Prism.Events;
@@ -17,14 +18,15 @@ namespace ReferenceConflictsModule
     {
         private readonly ILoggerFacade logger;
         private readonly IRegionManager _regionManager;
+        private readonly IUnityContainer _container;
 
-
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="ModuleA"/> class.
         /// </summary>
         /// <param name="logger">The logger.</param>
         /// <param name="moduleTracker">The module tracker.</param>        
-        public ConflictsModule(IRegionManager regionManager, ILoggerFacade logger)
+        public ConflictsModule(IRegionManager regionManager, IUnityContainer container,  ILoggerFacade logger)
         {
             if (logger == null)
             {
@@ -33,6 +35,7 @@ namespace ReferenceConflictsModule
 
             this.logger = logger;
             _regionManager = regionManager;
+            _container = container;
         }
 
         /// <summary>
@@ -40,6 +43,7 @@ namespace ReferenceConflictsModule
         /// </summary>
         public void Initialize()
         {
+           
             this.logger.Log("ModuleA demonstrates logging during Initialize().", Category.Info, Priority.Medium);
             _regionManager.RegisterViewWithRegion(RegionNames.MainNavigationRegion, typeof(ConflictsNavigationItemView));
             _regionManager.RegisterViewWithRegion(RegionNames.MainContentRegion, typeof(ReferenceConflictsView));

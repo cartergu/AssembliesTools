@@ -40,3 +40,10 @@ C:\pnl\AssembliesTools\ReferenceConflictsModule\obj\Debug\ReferenceConflictsModu
 C:\pnl\AssembliesTools\ReferenceConflictsModule\obj\Debug\ReferenceConflictsModule.g.resources
 C:\pnl\AssembliesTools\ReferenceConflictsModule\obj\Debug\ReferenceConflictsModule.dll
 C:\pnl\AssembliesTools\ReferenceConflictsModule\obj\Debug\ReferenceConflictsModule.pdb
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\AssemblyInfoProvider.Contracts.dll
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Microsoft.Practices.Unity.dll
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\AssemblyInfoProvider.Contracts.pdb
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\pnl\AssembliesTools\ReferenceConflictsModule\bin\Debug\Microsoft.Practices.Unity.xml

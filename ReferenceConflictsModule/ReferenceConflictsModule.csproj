@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Prism">
@@ -54,6 +60,7 @@
   <ItemGroup>
     <Compile Include="ConflictsModule.cs" />
     <Compile Include="DependecyAnalayzer.cs" />
+    <Compile Include="Factory.cs" />
     <Compile Include="Native\FileInfoExtensions.cs" />
     <Compile Include="Native\ImageDataDirectory.cs" />
     <Compile Include="Native\ImageDosHeader.cs" />
@@ -80,6 +87,10 @@
     <ProjectReference Include="..\AssembliesTools.DomainModels\AssembliesTools.DomainModels.csproj">
       <Project>{d04f28de-a7be-46da-80c7-649438639a0b}</Project>
       <Name>AssembliesTools.DomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AssemblyInfoProvider.Contracts\AssemblyInfoProvider.Contracts.csproj">
+      <Project>{e5b0d6d9-97cc-47c9-94c3-0e426f82625b}</Project>
+      <Name>AssemblyInfoProvider.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
